@@ -1,38 +1,42 @@
 [
   {
     "id": 1,
-    "nombre": "",
-    "academia": "",
-    "materias": "",
-    "semestre": "",
-    "perfil": "",
-    "avatar": "img/docentes/"
+    "nombre": "Ing. Carlos Alberto Ramírez",
+    "academia": "Cómputo y Electrónica",
+    "materias": "Soporte técnico, Redes y Mantenimiento de equipo de cómputo",
+    "semestre": "3.º y 5.º semestre",
+    "perfil": "Especialista en redes y mantenimiento de equipo de cómputo.",
+    "avatar": "img/docentes/avatar.svg",
+    "demo": true
   },
   {
     "id": 2,
-    "nombre": "",
-    "academia": "",
-    "materias": "",
-    "semestre": "",
-    "perfil": "",
-    "avatar": "img/docentes/"
+    "nombre": "Dra. María Elena Garza",
+    "academia": "Ciencias Básicas",
+    "materias": "Matemáticas aplicadas y Física",
+    "semestre": "1.º y 3.º semestre",
+    "perfil": "Docente de ciencias exactas enfocada en el razonamiento lógico.",
+    "avatar": "img/docentes/avatar.svg",
+    "demo": true
   },
   {
     "id": 3,
-    "nombre": "",
-    "academia": "",
-    "materias": "",
-    "semestre": "",
-    "perfil": "",
-    "avatar": "img/docentes/"
+    "nombre": "L.T. Roberto Carlos Sánchez",
+    "academia": "Mecánica y Refrigeración",
+    "materias": "Máquinas de combustión interna y Refrigeración",
+    "semestre": "4.º y 6.º semestre",
+    "perfil": "Técnico con experiencia en mantenimiento mecánico y sistemas de climatización.",
+    "avatar": "img/docentes/avatar.svg",
+    "demo": true
   },
   {
     "id": 4,
-    "nombre": "",
-    "academia": "",
-    "materias": "",
-    "semestre": "",
-    "perfil": "",
-    "avatar": "img/docentes/"
+    "nombre": "Lic. Ana Sofía Treviño",
+    "academia": "Desarrollo Humano",
+    "materias": "Ética y valores, Metodología de la investigación",
+    "semestre": "1.º y 2.º semestre",
+    "perfil": "Responsable de actividades de formación cívica y desarrollo humano.",
+    "avatar": "img/docentes/avatar.svg",
+    "demo": true
   }
 ]

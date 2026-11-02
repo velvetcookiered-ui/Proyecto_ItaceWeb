@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Aulas">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#355C7D"/><stop offset="1" stop-color="#1c2e40"/></linearGradient>
+<pattern id="p" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#fff" stroke-opacity=".07"/></pattern></defs>
+<rect width="800" height="500" fill="url(#g)"/><rect width="800" height="500" fill="url(#p)"/>
+<circle cx="680" cy="70" r="150" fill="#C5A059" fill-opacity=".16"/><circle cx="90" cy="460" r="170" fill="#fff" fill-opacity=".06"/>
+<g fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity=".92"><path d="M400 140c-50-35-110-35-160-20v170c50-15 110-15 160 20 50-35 110-35 160-20V120c-50-15-110-15-160 20zM400 140v170"/></g>
+<rect y="408" width="800" height="92" fill="#2a0a12" fill-opacity=".55"/>
+<text x="32" y="448" fill="#fff" font-family="Montserrat,Segoe UI,Arial,sans-serif" font-weight="700" font-size="30">Aulas</text>
+<text x="32" y="480" fill="#F3DDA8" font-family="Open Sans,Segoe UI,Arial,sans-serif" font-size="17">Ilustración · sustituir por fotografía autorizada</text>
+</svg>

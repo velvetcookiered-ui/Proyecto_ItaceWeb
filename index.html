@@ -1,991 +1,114 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITACE Plantel Reynosa | Portal Institucional Digital </title>
-    <!-- Tailwind CSS CDN for utility baseline -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <link rel="stylesheet" href="css/Estilos1.css">
-    <!-- FontAwesome for accessible icons -->
+    <title>Inicio | ITACE Reynosa - Propuesta académica</title>
+    <meta name="description" content="Portal digital propuesto para el ITACE Plantel Reynosa: oferta educativa, docentes, instalaciones, admisiones y contacto.">
+    <meta name="theme-color" content="#6B1D2F">
+    <meta name="robots" content="noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        itace: {
-                            vino: '#6B1D2F',
-                            vinodark: '#4A121F',
-                            vinolight: '#8C2B42',
-                            dorado: '#C5A059',
-                            doradodark: '#A3803C',
-                            grisbg: '#F4F6F8',
-                            grisTexto: '#4A4A4A'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Open Sans', 'sans-serif'],
-                        heading: ['Montserrat', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
 
-<script src="js/Scripts_B-side.js" defer></script>
-
-<body class="bg-itace-grisbg text-itace-grisTexto font-sans antialiased flex flex-col min-h-screen">
-
-    <!-- Top Notice Bar (Proyecto Académico) -->
-    <div class="bg-itace-vinodark text-white text-xs py-2 px-4 border-b-2 border-itace-dorado">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
-            <div class="flex items-center space-x-3">
-                <span class="bg-itace-dorado text-itace-vinodark font-bold px-2 py-0.5 rounded text-[10px]">PROPUESTA ACADÉMICA</span>
-                <span class="hidden sm:inline">ITACE Plantel "Heroica Reynosa" | Desarrollo Web 2026</span>
-            </div>
-            <div class="flex items-center space-x-6 text-gray-200">
-                <a href="tel:8999261212" class="hover:text-itace-dorado transition flex items-center gap-1">
-                    <i class="fa-solid fa-phone text-itace-dorado"></i> (899) 926-1212
-                </a>
-                <a href="mailto:reynosa@itace.edu.mx" class="hover:text-itace-dorado transition flex items-center gap-1">
-                    <i class="fa-solid fa-envelope text-itace-dorado"></i> reynosa@itace.edu.mx
-                </a>
-            </div>
+    <div class="aviso-superior">
+        <div class="contenedor">
+            <p style="margin:0"><span class="etiqueta-academica">PROPUESTA ACADÉMICA NO OFICIAL</span><span class="oculto-movil">Proyecto de Desarrollo Web · Grupo 502 B</span></p>
+            <p style="margin:0"><a href="tel:+528999240184"><i class="fa-solid fa-phone" aria-hidden="true"></i> 899 924 0184</a></p>
         </div>
     </div>
 
-    <!-- Navegación Principal -->
-    <header class="sticky top-0 z-40 bg-white shadow-md border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <a href="#inicio" class="flex items-center space-x-3 group">
-                    <div class="w-12 h-12 bg-itace-vino rounded-lg flex items-center justify-center text-white font-heading font-extrabold text-xl shadow-lg border-2 border-itace-dorado group-hover:bg-itace-vinolight transition">
-                        ITACE
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="font-heading font-bold text-lg leading-tight text-itace-vino">ITACE REYNOSA</span>
-                        <span class="text-xs text-gray-500 uppercase tracking-wider font-semibold">Portal Institucional 4.0</span>
-                    </div>
-                </a>
-
-                <!-- Menú Desktop -->
-                <nav class="hidden lg:flex space-x-5 font-heading font-medium text-xs uppercase tracking-wider">
-                    <a href="#inicio" class="text-itace-vino font-bold border-b-2 border-itace-vino pb-1">Inicio</a>
-                    <a href="#conocenos" class="text-gray-700 hover:text-itace-vino transition">Conócenos</a>
-                    <a href="#carreras" class="text-gray-700 hover:text-itace-vino transition">Oferta Educativa</a>
-                    <a href="#instalaciones" class="text-gray-700 hover:text-itace-vino transition">Instalaciones</a>
-                    <a href="#docentes" class="text-gray-700 hover:text-itace-vino transition">Docentes</a>
-                    <a href="#himnos" class="text-gray-700 hover:text-itace-vino transition">Himnos</a>
-                    <a href="#galeria" class="text-gray-700 hover:text-itace-vino transition">Galería</a>
-                    <a href="#contacto" class="text-gray-700 hover:text-itace-vino transition">Contacto</a>
-                </nav>
-
-                <div class="hidden lg:block">
-                    <a href="#admisiones" class="bg-itace-dorado hover:bg-itace-doradodark text-itace-vinodark font-heading font-bold px-4 py-2.5 rounded-lg shadow transition duration-200 text-xs flex items-center gap-2 uppercase tracking-wider">
-                        <i class="fa-solid fa-graduation-cap"></i> Admisiones
-                    </a>
-                </div>
-
-                <!-- Botón Menú Móvil -->
-                <button id="mobile-menu-btn" class="lg:hidden text-itace-vino hover:text-itace-vinolight focus:outline-none p-2" aria-label="Abrir Menú">
-                    <i class="fa-solid fa-bars text-2xl"></i>
-                </button>
+    <header class="cabecera">
+        <div class="contenedor">
+            <a class="marca" href="index.html" aria-label="ITACE Reynosa, ir al inicio">
+                <span class="marca-logo" aria-hidden="true">ITACE</span>
+                <span class="marca-texto"><strong>ITACE REYNOSA</strong><span>Portal digital 4.0</span></span>
+            </a>
+            <nav id="navegacion" class="navegacion" aria-label="Navegación principal">
+                <ul class="menu">
+                    <li><a href="index.html" aria-current="page">Inicio</a></li><li><a href="paginas/conocenos.html">Conócenos</a></li><li><a href="paginas/oferta-educativa.html">Oferta educativa</a></li><li><a href="paginas/instalaciones.html">Instalaciones</a></li><li><a href="paginas/docentes.html">Docentes</a></li><li><a href="paginas/admisiones.html">Admisiones</a></li><li><a href="paginas/galeria.html">Galería</a></li><li><a href="paginas/contacto.html">Contacto</a></li>
+                    <li class="menu-mas"><button type="button" aria-expanded="false" aria-haspopup="true">Más <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                        <ul class="submenu"><li><a href="paginas/vida-estudiantil.html">Vida estudiantil</a></li><li><a href="paginas/proyectos.html">Proyectos estudiantiles</a></li><li><a href="paginas/noticias.html">Noticias</a></li><li><a href="paginas/eventos.html">Eventos y conferencias</a></li><li><a href="paginas/identidad.html">Identidad y orgullo ITACE</a></li><li><a href="paginas/preguntas.html">Preguntas frecuentes</a></li><li><a href="paginas/creditos.html">Créditos y fuentes</a></li></ul></li>
+                </ul>
+            </nav>
+            <div class="acciones-cabecera">
+                <button type="button" id="btn-tema" class="btn-icono" aria-label="Activar modo oscuro" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 14.5A9 9 0 0 1 9.5 3a9 9 0 1 0 11.5 11.5z"/></svg></button>
+                <button type="button" id="nav-toggle" class="btn-icono nav-toggle" aria-label="Abrir menú" aria-controls="navegacion" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 5h18v2H3zM3 11h18v2H3zM3 17h18v2H3z"/></svg></button>
             </div>
-        </div>
-
-        <!-- Menú desplegable Móvil -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 px-4 pt-2 pb-6 space-y-2 shadow-xl">
-            <a href="#inicio" class="block py-2 text-itace-vino font-semibold border-l-4 border-itace-vino pl-2">Inicio</a>
-            <a href="#conocenos" class="block py-2 text-gray-700 hover:pl-2 transition-all">Conócenos</a>
-            <a href="#carreras" class="block py-2 text-gray-700 hover:pl-2 transition-all">Oferta Educativa</a>
-            <a href="#instalaciones" class="block py-2 text-gray-700 hover:pl-2 transition-all">Instalaciones</a>
-            <a href="#vida-estudiantil" class="block py-2 text-gray-700 hover:pl-2 transition-all">Vida Estudiantil</a>
-            <a href="#proyectos" class="block py-2 text-gray-700 hover:pl-2 transition-all">Proyectos</a>
-            <a href="#noticias" class="block py-2 text-gray-700 hover:pl-2 transition-all">Noticias y Eventos</a>
-            <a href="#docentes" class="block py-2 text-gray-700 hover:pl-2 transition-all">Directorio Docente</a>
-            <a href="#himnos" class="block py-2 text-gray-700 hover:pl-2 transition-all">Identidad e Himnos</a>
-            <a href="#galeria" class="block py-2 text-gray-700 hover:pl-2 transition-all">Galería Multimedia</a>
-            <a href="#contacto" class="block py-2 text-gray-700 hover:pl-2 transition-all">Contacto</a>
         </div>
     </header>
 
-    <!-- 6.1 INICIO / PORTADA INSTITUCIONAL -->
-    <section id="inicio" class="relative hero-gradient text-white py-20 lg:py-28 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 bg-itace-dorado/20 border border-itace-dorado/40 px-3 py-1 rounded-full text-itace-dorado text-xs font-semibold uppercase tracking-wider">
-                        <i class="fa-solid fa-award"></i> Excelencia en Educación Técnica Industrial
-                    </div>
-                    <h1 class="text-3xl sm:text-5xl font-heading font-extrabold tracking-tight leading-tight">
-                        Instituto Tamaulipeco de Capacitación para el Empleo
-                        <span class="block text-itace-dorado mt-1">Plantel Reynosa</span>
-                    </h1>
-                    <p class="text-base sm:text-lg text-gray-200 max-w-2xl font-light">
-                        Formando técnicos profesionales capacitados para el sector productivo con altos estándares de calidad, disciplina e innovación tecnológica.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
-                        <a href="#carreras" class="bg-itace-dorado hover:bg-itace-doradodark text-itace-vinodark font-heading font-bold px-6 py-3.5 rounded-lg shadow-lg transition duration-200 text-center flex items-center justify-center gap-2 text-sm uppercase tracking-wider">
-                            <i class="fa-solid fa-briefcase"></i> Explorar Carreras
-                        </a>
-                        <a href="#docentes" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 font-heading font-semibold px-6 py-3.5 rounded-lg transition duration-200 text-center text-sm uppercase tracking-wider">
-                            Directorio Docente
-                        </a>
-                    </div>
-                </div>
+    <main id="contenido">
 
-                <div class="lg:col-span-5">
-                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-2xl space-y-6">
-                        <h3 class="font-heading font-bold text-xl border-b border-itace-dorado/40 pb-3 flex items-center justify-between text-white">
-                            <span>Datos Institucionales</span>
-                            <i class="fa-solid fa-chart-line text-itace-dorado"></i>
-                        </h3>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="bg-black/20 p-4 rounded-xl border border-white/10 text-center">
-                                <span class="block text-3xl font-extrabold text-itace-dorado">6+</span>
-                                <span class="text-xs text-gray-200">Carreras Técnicas</span>
-                            </div>
-                            <div class="bg-black/20 p-4 rounded-xl border border-white/10 text-center">
-                                <span class="block text-3xl font-extrabold text-itace-dorado">100%</span>
-                                <span class="text-xs text-gray-200">Talleres Equipados</span>
-                            </div>
-                            <div class="bg-black/20 p-4 rounded-xl border border-white/10 text-center">
-                                <span class="block text-3xl font-extrabold text-itace-dorado">1,500+</span>
-                                <span class="text-xs text-gray-200">Matrícula Activa</span>
-                            </div>
-                            <div class="bg-black/20 p-4 rounded-xl border border-white/10 text-center">
-                                <span class="block text-3xl font-extrabold text-itace-dorado">30+</span>
-                                <span class="text-xs text-gray-200">Años de Historia</span>
-                            </div>
-                        </div>
+
+        <section class="hero" aria-labelledby="titulo-inicio">
+            <div class="contenedor hero-grid">
+                <div class="anim-entrada">
+                    <span class="hero-etiqueta"><i class="fa-solid fa-award" aria-hidden="true"></i> Bachillerato tecnológico · Reynosa, Tamaulipas</span>
+                    <h1 id="titulo-inicio">Instituto Tamaulipeco de Capacitación para el Empleo <span class="resalte">Plantel Reynosa</span></h1>
+                    <p class="lead">Te damos la bienvenida al portal digital del plantel. Aquí encontrarás su historia, su oferta educativa, sus docentes y la identidad que une a nuestra comunidad.</p>
+                    <div class="hero-acciones">
+                        <a class="btn btn-dorado pulso" href="paginas/oferta-educativa.html"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Explorar oferta educativa</a>
+                        <a class="btn btn-borde" href="paginas/admisiones.html">Quiero inscribirme</a>
                     </div>
                 </div>
+                <div class="hero-lateral"><figure class="hero-foto"><img src="img/hero-plantel.svg" alt="Fachada del ITACE Plantel Reynosa (imagen ilustrativa; sustituir por fotografía autorizada)" width="800" height="500"></figure>
+                <aside class="hero-panel" aria-labelledby="datos-inst">
+                    <h2 id="datos-inst">El plantel en cifras</h2>
+                    <div class="stats">
+                        <div class="stat"><strong data-contar="1039">1,039</strong><span>Alumnos</span></div>
+                        <div class="stat"><strong data-contar="89">89</strong><span>Docentes</span></div>
+                        <div class="stat"><strong data-contar="24">24</strong><span>Grupos</span></div>
+                        <div class="stat"><strong data-contar="6">6</strong><span>Especialidades de bachillerato</span></div>
+                    </div>
+                    <p class="fuente-nota">Fuente: ficha SEP del plantel (CCT 28ETC0008E), ciclo 2022-2023. Las especialidades corresponden al Manual de Organización del ITACE (2014).</p>
+                </aside></div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 6.2 CONOCE AL ITACE -->
-    <section id="conocenos" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <span class="text-itace-vino font-semibold uppercase tracking-wider text-xs">Identidad Institucional</span>
-                <h2 class="text-3xl font-heading font-bold text-gray-900 mt-1">Conoce al ITACE Reynosa</h2>
-                <div class="w-20 h-1 bg-itace-dorado mx-auto mt-3 rounded-full"></div>
-            </div>
+        <section class="seccion seccion-blanca" aria-labelledby="acc"><div class="contenedor"><div class="encabezado revelar "><span class="sobretitulo">Accesos rápidos</span><h2>¿Qué estás buscando?</h2><p>Navega directamente a los apartados más consultados.</p></div><div class="grid grid-3"><a class="tarjeta tarjeta-acceso tarjeta-acento revelar" href="paginas/conocenos.html"><div class="tarjeta-cuerpo"><span class="icono"><i class="fa-solid fa-landmark" aria-hidden="true"></i></span><h3>Conoce al ITACE</h3><p>Historia, misión, visión y trayectoria del plantel.</p><span class="pie-tarjeta">Entrar <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></div></a><a class="tarjeta tarjeta-acceso tarjeta-acento revelar" href="paginas/oferta-educativa.html"><div class="tarjeta-cuerpo"><span class="icono"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span><h3>Oferta educativa</h3><p>Bachillerato tecnológico y cursos de capacitación para el trabajo.</p><span class="pie-tarjeta">Entrar <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></div></a><a class="tarjeta tarjeta-acceso tarjeta-acento revelar" href="paginas/docentes.html"><div class="tarjeta-cuerpo"><span class="icono"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i></span><h3>Directorio docente</h3><p>Busca profesores por nombre, materia o academia.</p><span class="pie-tarjeta">Entrar <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></div></a><a class="tarjeta tarjeta-acceso tarjeta-acento revelar" href="paginas/admisiones.html"><div class="tarjeta-cuerpo"><span class="icono"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i></span><h3>Admisiones</h3><p>Requisitos y pasos para inscribirte.</p><span class="pie-tarjeta">Entrar <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></div></a><a class="tarjeta tarjeta-acceso tarjeta-acento revelar" href="paginas/galeria.html"><div class="tarjeta-cuerpo"><span class="icono"><i class="fa-solid fa-images" aria-hidden="true"></i></span><h3>Galería multimedia</h3><p>Fotografías por categoría y vista ampliada.</p><span class="pie-tarjeta">Entrar <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></div></a><a class="tarjeta tarjeta-acceso tarjeta-acento revelar" href="paginas/identidad.html"><div class="tarjeta-cuerpo"><span class="icono"><i class="fa-solid fa-music" aria-hidden="true"></i></span><h3>Identidad y orgullo</h3><p>Himno del ITACE e Himno a Tamaulipas.</p><span class="pie-tarjeta">Entrar <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></div></a></div></div></section>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="institutional-card border-t-4 border-itace-vino">
-                    <div class="w-12 h-12 bg-itace-vino/10 text-itace-vino rounded-xl flex items-center justify-center text-2xl mb-4">
-                        <i class="fa-solid fa-bullseye"></i>
-                    </div>
-                    <h3 class="text-xl font-heading font-bold text-itace-vino mb-3">Misión</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Impartir educación media superior y capacitación para el trabajo técnica y de calidad, formando jóvenes íntegros con habilidades pertinentes para incorporarse al sector productivo o continuar sus estudios superiores.
-                    </p>
-                </div>
+        <section class="seccion " aria-labelledby="esp"><div class="contenedor"><div class="encabezado revelar "><span class="sobretitulo">Formación técnica</span><h2>Algunas especialidades</h2><p>El bachillerato tecnológico del plantel incluye, entre otras, las siguientes especialidades.</p></div><div class="grid grid-3"><article class="tarjeta revelar"><div class="tarjeta-medio"><img class="tarjeta-img" src="img/instalaciones/computo.svg" alt="Soporte y mantenimiento de equipo de cómputo (imagen ilustrativa)" width="800" height="500" loading="lazy"></div><div class="tarjeta-cuerpo"><h3>Soporte y mantenimiento de equipo de cómputo</h3><span class="insignia">Bachillerato tecnológico</span></div></article><article class="tarjeta revelar"><div class="tarjeta-medio"><img class="tarjeta-img" src="img/instalaciones/electronica.svg" alt="Electrónica (imagen ilustrativa)" width="800" height="500" loading="lazy"></div><div class="tarjeta-cuerpo"><h3>Electrónica</h3><span class="insignia">Bachillerato tecnológico</span></div></article><article class="tarjeta revelar"><div class="tarjeta-medio"><img class="tarjeta-img" src="img/instalaciones/mantenimiento.svg" alt="Mantenimiento industrial (imagen ilustrativa)" width="800" height="500" loading="lazy"></div><div class="tarjeta-cuerpo"><h3>Mantenimiento industrial</h3><span class="insignia">Bachillerato tecnológico</span></div></article></div><p class="texto-centro" style="margin-top:2rem"><a class="btn btn-contorno" href="paginas/oferta-educativa.html">Ver toda la oferta educativa</a></p></div></section>
 
-                <div class="institutional-card border-t-4 border-itace-dorado">
-                    <div class="w-12 h-12 bg-itace-dorado/20 text-itace-doradodark rounded-xl flex items-center justify-center text-2xl mb-4">
-                        <i class="fa-solid fa-eye"></i>
-                    </div>
-                    <h3 class="text-xl font-heading font-bold text-itace-vinodark mb-3">Visión</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Ser la institución educativa líder en formación tecnológica en Tamaulipas, reconocida por la excelencia académica, innovación continua y fuerte vinculación industrial en la región frontera.
-                    </p>
-                </div>
+        <section class="seccion seccion-vino" aria-labelledby="noticia"><div class="contenedor"><div class="dos-col"><div class="revelar"><span class="sobretitulo">Última noticia</span><h2>El ITACE atendió a más de 21 mil personas en 2025-2026</h2><p>Según una nota de POSTA publicada el 4 de agosto de 2026, el instituto impartió 1,300 cursos en el ciclo 2025-2026, con presencia en Altamira, Matamoros, Nuevo Laredo, Reynosa y Ciudad Victoria.</p><a class="btn btn-dorado" href="paginas/noticias.html">Leer más noticias</a></div><div class="revelar"><div class="reproductor dorado"><div class="reproductor-cab"><span class="icono dorado"><i class="fa-solid fa-music" aria-hidden="true"></i></span><div><h3>Identidad y orgullo ITACE</h3><span>Himno del ITACE · Himno a Tamaulipas</span></div></div><p>Escucha las interpretaciones realizadas por los estudiantes del plantel.</p><a class="btn btn-primario" href="paginas/identidad.html"><i class="fa-solid fa-play" aria-hidden="true"></i> Ir a los himnos</a></div></div></div></div></section>
 
-                <div class="institutional-card border-t-4 border-itace-vino">
-                    <div class="w-12 h-12 bg-itace-vino/10 text-itace-vino rounded-xl flex items-center justify-center text-2xl mb-4">
-                        <i class="fa-solid fa-hand-holding-heart"></i>
-                    </div>
-                    <h3 class="text-xl font-heading font-bold text-itace-vino mb-3">Valores</h3>
-                    <ul class="text-gray-600 text-sm space-y-2">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-itace-dorado text-xs"></i> Compromiso e Integridad</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-itace-dorado text-xs"></i> Disciplina y Trabajo en Equipo</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-itace-dorado text-xs"></i> Innovación y Respeto Social</li>
+    </main>
+
+    <footer class="pie">
+        <div class="contenedor">
+            <div class="pie-grid">
+                <section aria-labelledby="pie-1">
+                    <h2 id="pie-1">ITACE Plantel Reynosa</h2>
+                    <p>Instituto Tamaulipeco de Capacitación para el Empleo. Bachillerato tecnológico y capacitación para el trabajo.</p>
+                    <p><strong>Propuesta académica no oficial.</strong> No sustituye al sitio institucional.</p>
+                </section>
+                <nav aria-labelledby="pie-2">
+                    <h2 id="pie-2">Navegación</h2>
+                    <ul><li><a href="index.html" aria-current="page">Inicio</a></li><li><a href="paginas/conocenos.html">Conócenos</a></li><li><a href="paginas/oferta-educativa.html">Oferta educativa</a></li><li><a href="paginas/instalaciones.html">Instalaciones</a></li><li><a href="paginas/docentes.html">Docentes</a></li><li><a href="paginas/admisiones.html">Admisiones</a></li></ul>
+                </nav>
+                <nav aria-labelledby="pie-3">
+                    <h2 id="pie-3">Más información</h2>
+                    <ul><li><a href="paginas/vida-estudiantil.html">Vida estudiantil</a></li><li><a href="paginas/proyectos.html">Proyectos estudiantiles</a></li><li><a href="paginas/noticias.html">Noticias</a></li><li><a href="paginas/eventos.html">Eventos y conferencias</a></li><li><a href="paginas/identidad.html">Identidad y orgullo ITACE</a></li><li><a href="paginas/preguntas.html">Preguntas frecuentes</a></li><li><a href="paginas/creditos.html">Créditos y fuentes</a></li></ul>
+                </nav>
+                <section aria-labelledby="pie-4">
+                    <h2 id="pie-4">Contacto</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Calle Octava, Prolongación Cumbres, C.P. 88745, Reynosa, Tamaulipas</li>
+                        <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+528999240184">899 924 0184</a> · <a href="tel:+528999225097">899 922 5097</a></li>
+                        <li><i class="fa-solid fa-globe" aria-hidden="true"></i> <a href="https://itace.edu.mx/" target="_blank" rel="noopener noreferrer">Sitio oficial del ITACE</a></li>
+                        <li><i class="fa-brands fa-facebook" aria-hidden="true"></i> <a href="https://www.facebook.com/itaceplantelreynosa/" target="_blank" rel="noopener noreferrer">Facebook del plantel</a></li>
                     </ul>
-                </div>
+                </section>
             </div>
-        </div>
-    </section>
-
-    <!-- 6.3 OFERTA EDUCATIVA -->
-    <section id="carreras" class="py-16 bg-itace-grisbg border-t border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <span class="text-itace-vino font-semibold uppercase tracking-wider text-xs">Formación Profesional</span>
-                <h2 class="text-3xl font-heading font-bold text-gray-900 mt-1">Oferta Educativa</h2>
-                <p class="text-gray-600 mt-2 text-sm">Programas técnicos diseñados para responder a la demanda industrial de Reynosa.</p>
-                <div class="w-20 h-1 bg-itace-dorado mx-auto mt-3 rounded-full"></div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Carrera 1 -->
-                <div class="institutional-card flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center text-2xl mb-4">
-                            <i class="fa-solid fa-laptop-code"></i>
-                        </div>
-                        <h3 class="font-heading font-bold text-lg text-gray-900 mb-2">Soporte y Mantenimiento de Cómputo</h3>
-                        <p class="text-gray-600 text-sm mb-4">Formación en ensamble, mantenimiento, diagnóstico de hardware, configuración de redes e instalación de software.</p>
-                    </div>
-                    <span class="text-xs font-semibold text-itace-vino bg-itace-vino/10 px-3 py-1 rounded-full w-fit">Título y Cédula Profesional</span>
-                </div>
-
-                <!-- Carrera 2 -->
-                <div class="institutional-card flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-lg flex items-center justify-center text-2xl mb-4">
-                            <i class="fa-solid fa-gears"></i>
-                        </div>
-                        <h3 class="font-heading font-bold text-lg text-gray-900 mb-2">Mantenimiento Industrial</h3>
-                        <p class="text-gray-600 text-sm mb-4">Especialización en sistemas neumáticos, hidráulicos, automatización y mantenimiento mecánico preventivo.</p>
-                    </div>
-                    <span class="text-xs font-semibold text-itace-vino bg-itace-vino/10 px-3 py-1 rounded-full w-fit">Título y Cédula Profesional</span>
-                </div>
-
-                <!-- Carrera 3 -->
-                <div class="institutional-card flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-lg flex items-center justify-center text-2xl mb-4">
-                            <i class="fa-solid fa-microchip"></i>
-                        </div>
-                        <h3 class="font-heading font-bold text-lg text-gray-900 mb-2">Electrónica</h3>
-                        <p class="text-gray-600 text-sm mb-4">Capacitación en circuitos analógicos y digitales, microcontroladores, robótica básica y sensores industriales.</p>
-                    </div>
-                    <span class="text-xs font-semibold text-itace-vino bg-itace-vino/10 px-3 py-1 rounded-full w-fit">Título y Cédula Profesional</span>
-                </div>
-
-                <!-- Carrera 4 -->
-                <div class="institutional-card flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-lg flex items-center justify-center text-2xl mb-4">
-                            <i class="fa-solid fa-vest"></i>
-                        </div>
-                        <h3 class="font-heading font-bold text-lg text-gray-900 mb-2">Diseño y Fabricación de Prendas</h3>
-                        <p class="text-gray-600 text-sm mb-4">Patronaje industrial, técnicas de confección textil, control de calidad y producción en serie.</p>
-                    </div>
-                    <span class="text-xs font-semibold text-itace-vino bg-itace-vino/10 px-3 py-1 rounded-full w-fit">Título y Cédula Profesional</span>
-                </div>
-
-                <!-- Carrera 5 -->
-                <div class="institutional-card flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-rose-50 text-rose-600 rounded-lg flex items-center justify-center text-2xl mb-4">
-                            <i class="fa-solid fa-car-side"></i>
-                        </div>
-                        <h3 class="font-heading font-bold text-lg text-gray-900 mb-2">Mantenimiento Automotriz</h3>
-                        <p class="text-gray-600 text-sm mb-4">Diagnóstico por escáner, revisión de motores de combustión, sistemas mecánicos y electromecánicos.</p>
-                    </div>
-                    <span class="text-xs font-semibold text-itace-vino bg-itace-vino/10 px-3 py-1 rounded-full w-fit">Título y Cédula Profesional</span>
-                </div>
-
-                <!-- Carrera 6 -->
-                <div class="institutional-card flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-teal-50 text-teal-600 rounded-lg flex items-center justify-center text-2xl mb-4">
-                            <i class="fa-solid fa-welding"></i>
-                        </div>
-                        <h3 class="font-heading font-bold text-lg text-gray-900 mb-2">Soldadura Industrial</h3>
-                        <p class="text-gray-600 text-sm mb-4">Aplicación de procesos SMAW, GMAW, TIG e inspección técnica de estructuras e uniones metálicas.</p>
-                    </div>
-                    <span class="text-xs font-semibold text-itace-vino bg-itace-vino/10 px-3 py-1 rounded-full w-fit">Título y Cédula Profesional</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6.4 INSTALACIONES -->
-    <section id="instalaciones" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-10">
-                <span class="text-itace-vino font-semibold uppercase tracking-wider text-xs">Infraestructura</span>
-                <h2 class="text-3xl font-heading font-bold text-gray-900 mt-1">Nuestras Instalaciones</h2>
-                <p class="text-gray-600 mt-2 text-sm">Espacios diseñados para el aprendizaje teórico y la práctica técnica intensiva.</p>
-                <div class="w-20 h-1 bg-itace-dorado mx-auto mt-3 rounded-full"></div>
-            </div>
-
-            <!-- Croquis y Tarjetas de Espacios -->
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div class="institutional-card border-l-4 border-itace-vino">
-                    <h3 class="font-heading font-bold text-lg mb-2"><i class="fa-solid fa-industry text-itace-vino mr-2"></i>Talleres Industriales</h3>
-                    <p class="text-sm text-gray-600">Equipados con tornos, fresadoras, áreas de soldadura y bancos de prueba para emular el entorno de trabajo real.</p>
-                </div>
-                <div class="institutional-card border-l-4 border-itace-dorado">
-                    <h3 class="font-heading font-bold text-lg mb-2"><i class="fa-solid fa-desktop text-itace-doradodark mr-2"></i>Laboratorios de Cómputo</h3>
-                    <p class="text-sm text-gray-600">Salones climatizados con conectividad de alta velocidad, redes de prueba y equipos para prácticas de soporte.</p>
-                </div>
-                <div class="institutional-card border-l-4 border-itace-vino">
-                    <h3 class="font-heading font-bold text-lg mb-2"><i class="fa-solid fa-futbol text-itace-vino mr-2"></i>Áreas Deportivas y Cívicas</h3>
-                    <p class="text-sm text-gray-600">Explanada principal para actos cívicos y canchas polideportivas para el desarrollo físico estudiantil.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6.5 VIDA ESTUDIANTIL Y 6.6 PROYECTOS ESTUDIANTILES -->
-    <section id="vida-estudiantil" class="py-16 bg-itace-grisbg border-t border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <!-- Vida Estudiantil -->
-                <div>
-                    <span class="text-itace-vino font-semibold uppercase tracking-wider text-xs">Comunidad</span>
-                    <h2 class="text-3xl font-heading font-bold text-gray-900 mt-1 mb-4">Vida Estudiantil</h2>
-                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">
-                        En el ITACE promovemos el desarrollo integral de nuestros alumnos a través de actividades académicas, deportivas, cívicas y de integración comunitaria.
-                    </p>
-                    <ul class="space-y-3">
-                        <li class="bg-white p-3 rounded-lg border border-gray-200 flex items-center gap-3 text-sm font-semibold text-gray-800">
-                            <i class="fa-solid fa-trophy text-itace-dorado"></i> Torneos Deportivos Intercolegiales
-                        </li>
-                        <li class="bg-white p-3 rounded-lg border border-gray-200 flex items-center gap-3 text-sm font-semibold text-gray-800">
-                            <i class="fa-solid fa-drum text-itace-vino"></i> Banda de Guerra y Escolta Oficial
-                        </li>
-                        <li class="bg-white p-3 rounded-lg border border-gray-200 flex items-center gap-3 text-sm font-semibold text-gray-800">
-                            <i class="fa-solid fa-tree text-emerald-600"></i> Campañas de Responsabilidad Social y Ecológica
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Proyectos Estudiantiles -->
-                <div id="proyectos">
-                    <span class="text-itace-vino font-semibold uppercase tracking-wider text-xs">Innovación Alumnos</span>
-                    <h2 class="text-3xl font-heading font-bold text-gray-900 mt-1 mb-4">Proyectos Destacados</h2>
-                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">
-                        Muestra de prototipos, proyectos de graduación e investigaciones desarrolladas por estudiantes de las distintas especialidades técnicas.
-                    </p>
-                    <div class="space-y-4">
-                        <div class="institutional-card">
-                            <h4 class="font-bold text-base text-itace-vino">Prototipo de Automatización Neumática</h4>
-                            <p class="text-xs text-gray-600 mt-1">Proyecto modular por alumnos de Mantenimiento Industrial para optimizar tiempos en maquila.</p>
-                        </div>
-                        <div class="institutional-card">
-                            <h4 class="font-bold text-base text-itace-vino">Sistema de Monitoreo de Red Local</h4>
-                            <p class="text-xs text-gray-600 mt-1">Herramienta software desarrollada en Soporte Técnico para diagnóstico remoto de equipos.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6.7 NOTICIAS Y 6.8 EVENTOS INSTITUCIONALES -->
-    <section id="noticias" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-10">
-                <span class="text-itace-vino font-semibold uppercase tracking-wider text-xs">Acontecimientos</span>
-                <h2 class="text-3xl font-heading font-bold text-gray-900 mt-1">Noticias y Eventos</h2>
-                <div class="w-20 h-1 bg-itace-dorado mx-auto mt-3 rounded-full"></div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <article class="institutional-card">
-                    <span class="text-[10px] font-bold uppercase tracking-wider bg-itace-vino/10 text-itace-vino px-2.5 py-1 rounded">Noticia</span>
-                    <h3 class="font-heading font-bold text-lg text-gray-900 mt-3 mb-2">Firma de Convenio de Vinculación Industrial</h3>
-                    <p class="text-xs text-gray-500 mb-3"><i class="fa-regular fa-calendar mr-1"></i> Octubre 2026</p>
-                    <p class="text-sm text-gray-600">Se formalizan alianzas con empresas locales para fortalecer las prácticas profesionales de los alumnos.</p>
-                </article>
-
-                <article class="institutional-card">
-                    <span class="text-[10px] font-bold uppercase tracking-wider bg-itace-dorado/20 text-itace-doradodark px-2.5 py-1 rounded">Evento</span>
-                    <h3 class="font-heading font-bold text-lg text-gray-900 mt-3 mb-2">Feria Anual de Prototipos y Tecnología</h3>
-                    <p class="text-xs text-gray-500 mb-3"><i class="fa-regular fa-calendar mr-1"></i> Noviembre 2026</p>
-                    <p class="text-sm text-gray-600">Exposición general de proyectos elaborados durante el semestre por las 6 carreras técnicas.</p>
-                </article>
-
-                <article class="institutional-card">
-                    <span class="text-[10px] font-bold uppercase tracking-wider bg-itace-vino/10 text-itace-vino px-2.5 py-1 rounded">Conferencia</span>
-                    <h3 class="font-heading font-bold text-lg text-gray-900 mt-3 mb-2">Taller de Seguridad e Higiene Industrial</h3>
-                    <p class="text-xs text-gray-500 mb-3"><i class="fa-regular fa-calendar mr-1"></i> Noviembre 2026</p>
-                    <p class="text-sm text-gray-600">Capacitación impartida por especialistas de la industria maquiladora para alumnos de último semestre.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6.9 ADMISIONES -->
-    <section id="admisiones" class="py-16 bg-itace-vinodark text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <span class="text-itace-dorado font-semibold uppercase tracking-wider text-xs">Proceso de Nuevo Ingreso</span>
-            <h2 class="text-3xl font-heading font-bold text-white mt-1 mb-4">Admisiones e Inscripciones</h2>
-            <p class="text-gray-200 max-w-2xl mx-auto text-sm leading-relaxed mb-8">
-                Consulta los requisitos, fechas de pre-registro y examen de ubicación para formar parte de la próxima generación del ITACE Plantel Reynosa.
-            </p>
-            <div class="inline-flex flex-wrap gap-4 justify-center">
-                <a href="#contacto" class="bg-itace-dorado hover:bg-itace-doradodark text-itace-vinodark font-bold px-6 py-3 rounded-lg shadow text-sm uppercase tracking-wider transition">
-                    Solicitar Requisitos
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6.10 DIRECTORIO DOCENTE PROFESIONAL -->
-    <section id="docentes" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-10">
-                <span class="text-itace-vino font-semibold uppercase tracking-wider text-xs">Personal Académico Autorizado</span>
-                <h2 class="text-3xl font-heading font-bold text-gray-900 mt-1">Directorio Docente</h2>
-                <p class="text-gray-600 mt-2 text-sm">Consulta la lista de profesores por nombre, materias impartidas o área académica.</p>
-                <div class="w-20 h-1 bg-itace-dorado mx-auto mt-3 rounded-full"></div>
-            </div>
-
-            <!-- Panel de Búsqueda y Filtro -->
-            <div class="bg-itace-grisbg p-6 rounded-2xl border border-gray-200 shadow-sm mb-8">
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
-                    <div class="md:col-span-5">
-                        <label for="docente-search" class="block text-xs font-bold text-gray-700 uppercase mb-1">Buscar por Nombre o Materia</label>
-                        <div class="relative">
-                            <input type="text" id="docente-search" placeholder="Ej. Carlos o Soporte Técnico..." class="w-full pl-10 pr-4 py-2.5 rounded-lg border border-gray-300 text-sm focus:ring-2 focus:ring-itace-vino focus:outline-none">
-                            <i class="fa-solid fa-magnifying-glass absolute left-3 top-3 text-gray-400 text-sm"></i>
-                        </div>
-                    </div>
-
-                    <div class="md:col-span-4">
-                        <label for="filter-academy" class="block text-xs font-bold text-gray-700 uppercase mb-1">Filtrar por Academia</label>
-                        <select id="filter-academy" class="w-full px-3 py-2.5 rounded-lg border border-gray-300 text-sm focus:ring-2 focus:ring-itace-vino focus:outline-none">
-                            <option value="">Todas las Academias</option>
-                            <option value="Tecnologías de la Información">Tecnologías de la Información</option>
-                            <option value="Mantenimiento Industrial">Mantenimiento Industrial</option>
-                            <option value="Ciencias Exactas">Ciencias Exactas</option>
-                            <option value="Desarrollo Humano">Desarrollo Humano</option>
-                        </select>
-                    </div>
-
-                    <div class="md:col-span-3 flex items-end">
-                        <button id="clear-search-btn" class="w-full bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2.5 px-4 rounded-lg text-xs uppercase tracking-wider transition flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-rotate-left"></i> Limpiar Búsqueda
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contenedor Dinámico de Tarjetas de Docentes -->
-            <div id="docentes-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Se inyectan dinámicamente mediante JS -->
-            </div>
-
-            <!-- Mensaje Sin Coincidencias -->
-            <div id="no-docentes-msg" class="hidden text-center py-12 bg-itace-grisbg rounded-2xl border border-dashed border-gray-300 mt-6">
-                <i class="fa-solid fa-user-slash text-4xl text-gray-400 mb-3"></i>
-                <h4 class="font-bold text-gray-700">No se encontraron docentes</h4>
-                <p class="text-xs text-gray-500 mt-1">Intenta ajustando los términos de búsqueda o selecciona otra academia.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6.11 IDENTIDAD Y ORGULLO ITACE (REPRODUCTORES INDEPENDIENTES) -->
-    <section id="himnos" class="py-16 bg-itace-grisbg border-t border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-10">
-                <span class="text-itace-vino font-semibold uppercase tracking-wider text-xs">Valores e Identidad</span>
-                <h2 class="text-3xl font-heading font-bold text-gray-900 mt-1">Identidad y Orgullo ITACE</h2>
-                <p class="text-gray-600 mt-2 text-sm">Interpretaciones institucionales por los estudiantes del plantel.</p>
-                <div class="w-20 h-1 bg-itace-dorado mx-auto mt-3 rounded-full"></div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Reproductor 1: Himno del ITACE -->
-                <div class="audio-card">
-                    <div class="flex items-center space-x-3 mb-3">
-                        <div class="w-10 h-10 bg-itace-vino text-white rounded-lg flex items-center justify-center font-bold">
-                            <i class="fa-solid fa-music"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-heading font-bold text-base text-gray-900">Himno Oficial del ITACE</h3>
-                            <span class="text-xs text-itace-vino font-semibold">Interpretación Estudiantil</span>
-                        </div>
-                    </div>
-                    <p class="text-xs text-gray-600 mb-4">Canto institucional que resalta los valores de superación técnica y esfuerzo académico.</p>
-
-                    <audio id="audio-himno-itace" preload="metadata">
-                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-                        Tu navegador no soporta el elemento de audio.
-                    </audio>
-
-                    <div class="space-y-3">
-                        <div class="flex items-center justify-between text-xs text-gray-500">
-                            <span id="time-itace">0:00</span>
-                            <input type="range" id="progress-itace" value="0" max="100" class="w-3/5 h-1 bg-gray-200 rounded appearance-none cursor-pointer accent-itace-vino">
-                            <span id="dur-itace">0:00</span>
-                        </div>
-
-                        <div class="flex items-center justify-between pt-2">
-                            <div class="flex items-center space-x-2">
-                                <button id="play-itace-btn" class="bg-itace-vino text-white w-9 h-9 rounded-full flex items-center justify-center hover:bg-itace-vinodark transition">
-                                    <i class="fa-solid fa-play text-xs" id="icon-itace-play"></i>
-                                </button>
-                                <button id="stop-itace-btn" class="bg-gray-100 text-gray-700 w-8 h-8 rounded-full flex items-center justify-center hover:bg-gray-200 transition">
-                                    <i class="fa-solid fa-stop text-[10px]"></i>
-                                </button>
-                            </div>
-                            <div class="flex items-center space-x-2">
-                                <i class="fa-solid fa-volume-high text-xs text-gray-500"></i>
-                                <input type="range" id="vol-itace" min="0" max="1" step="0.05" value="0.8" class="w-16 h-1 bg-gray-200 rounded appearance-none accent-itace-vino">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Reproductor 2: Himno a Tamaulipas -->
-                <div class="audio-card" style="border-left-color: var(--itace-dorado);">
-                    <div class="flex items-center space-x-3 mb-3">
-                        <div class="w-10 h-10 bg-itace-dorado text-itace-vinodark rounded-lg flex items-center justify-center font-bold">
-                            <i class="fa-solid fa-flag"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-heading font-bold text-base text-gray-900">Himno a Tamaulipas</h3>
-                            <span class="text-xs text-itace-doradodark font-semibold">Canto Estatal</span>
-                        </div>
-                    </div>
-                    <p class="text-xs text-gray-600 mb-4">Símbolo de orgullo e identidad de nuestro estado entonado en actos cívicos institucionales.</p>
-
-                    <audio id="audio-himno-tamaulipas" preload="metadata">
-                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
-                        Tu navegador no soporta el elemento de audio.
-                    </audio>
-
-                    <div class="space-y-3">
-                        <div class="flex items-center justify-between text-xs text-gray-500">
-                            <span id="time-tam">0:00</span>
-                            <input type="range" id="progress-tam" value="0" max="100" class="w-3/5 h-1 bg-gray-200 rounded appearance-none cursor-pointer accent-itace-dorado">
-                            <span id="dur-tam">0:00</span>
-                        </div>
-
-                        <div class="flex items-center justify-between pt-2">
-                            <div class="flex items-center space-x-2">
-                                <button id="play-tam-btn" class="bg-itace-dorado text-itace-vinodark w-9 h-9 rounded-full flex items-center justify-center hover:bg-itace-doradodark hover:text-white transition">
-                                    <i class="fa-solid fa-play text-xs" id="icon-tam-play"></i>
-                                </button>
-                                <button id="stop-tam-btn" class="bg-gray-100 text-gray-700 w-8 h-8 rounded-full flex items-center justify-center hover:bg-gray-200 transition">
-                                    <i class="fa-solid fa-stop text-[10px]"></i>
-                                </button>
-                            </div>
-                            <div class="flex items-center space-x-2">
-                                <i class="fa-solid fa-volume-high text-xs text-gray-500"></i>
-                                <input type="range" id="vol-tam" min="0" max="1" step="0.05" value="0.8" class="w-16 h-1 bg-gray-200 rounded appearance-none accent-itace-dorado">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6.12 GALERÍA MULTIMEDIA -->
-    <section id="galeria" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-8">
-                <span class="text-itace-vino font-semibold uppercase tracking-wider text-xs">Registro Visual</span>
-                <h2 class="text-3xl font-heading font-bold text-gray-900 mt-1">Galería Multimedia</h2>
-                <div class="w-20 h-1 bg-itace-dorado mx-auto mt-3 rounded-full"></div>
-            </div>
-
-            <!-- Filtros de Galería -->
-            <div class="flex flex-wrap justify-center gap-2 mb-8" id="gallery-filters">
-                <button data-cat="all" class="tab-btn active px-4 py-1.5 rounded-full text-xs font-bold border border-gray-300">Todos</button>
-                <button data-cat="talleres" class="tab-btn px-4 py-1.5 rounded-full text-xs font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200">Talleres</button>
-                <button data-cat="eventos" class="tab-btn px-4 py-1.5 rounded-full text-xs font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200">Eventos</button>
-                <button data-cat="civico" class="tab-btn px-4 py-1.5 rounded-full text-xs font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200">Cívicos</button>
-            </div>
-
-            <!-- Items de Galería SVG Representativos -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
-                <div class="gallery-item institutional-card p-2" data-category="talleres">
-                    <svg class="w-full h-48 bg-slate-800 rounded-lg" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="400" height="200" fill="#2C3E50"/>
-                        <circle cx="200" cy="100" r="40" fill="#C5A059" opacity="0.8"/>
-                        <text x="120" y="105" fill="#FFF" font-size="14" font-weight="bold">Prácticas de Soldadura</text>
-                    </svg>
-                    <div class="p-3">
-                        <h4 class="font-bold text-sm text-gray-900">Taller de Soldadura Industrial</h4>
-                        <p class="text-xs text-gray-500">Prácticas avanzadas con equipo de protección.</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item institutional-card p-2" data-category="talleres">
-                    <svg class="w-full h-48 bg-slate-900 rounded-lg" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="400" height="200" fill="#1E293B"/>
-                        <rect x="100" y="50" width="200" height="100" fill="#3B82F6" rx="6"/>
-                        <text x="130" y="105" fill="#FFF" font-size="14" font-weight="bold">Laboratorio de Redes</text>
-                    </svg>
-                    <div class="p-3">
-                        <h4 class="font-bold text-sm text-gray-900">Mantenimiento de Equipo</h4>
-                        <p class="text-xs text-gray-500">Ensamble y diagnóstico de computadoras.</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item institutional-card p-2" data-category="civico">
-                    <svg class="w-full h-48 bg-slate-200 rounded-lg" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="400" height="200" fill="#E2E8F0"/>
-                        <line x1="200" y1="30" x2="200" y2="170" stroke="#6B1D2F" stroke-width="6"/>
-                        <text x="140" y="105" fill="#333" font-size="14" font-weight="bold">Ceremonia Cívica</text>
-                    </svg>
-                    <div class="p-3">
-                        <h4 class="font-bold text-sm text-gray-900">Honores a la Bandera</h4>
-                        <p class="text-xs text-gray-500">Participación de la escolta y banda de guerra.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6.13 PREGUNTAS FRECUENTES -->
-    <section class="py-16 bg-itace-grisbg border-t border-gray-200">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-10">
-                <span class="text-itace-vino font-semibold uppercase tracking-wider text-xs">Aclaraciones</span>
-                <h2 class="text-3xl font-heading font-bold text-gray-900 mt-1">Preguntas Frecuentes</h2>
-                <div class="w-20 h-1 bg-itace-dorado mx-auto mt-3 rounded-full"></div>
-            </div>
-
-            <div class="space-y-4">
-                <details class="bg-white p-4 rounded-xl border border-gray-200 shadow-sm cursor-pointer">
-                    <summary class="font-bold text-gray-900 text-sm flex justify-between items-center">
-                        ¿Qué título se obtiene al egresar del ITACE?
-                        <i class="fa-solid fa-chevron-down text-itace-vino text-xs"></i>
-                    </summary>
-                    <p class="text-xs text-gray-600 mt-2 leading-relaxed">
-                        Los egresados obtienen su certificado de bachillerato técnico junto con la posibilidad de tramitar su Título y Cédula Profesional a nivel técnico autorizada por la SEP.
-                    </p>
-                </details>
-
-                <details class="bg-white p-4 rounded-xl border border-gray-200 shadow-sm cursor-pointer">
-                    <summary class="font-bold text-gray-900 text-sm flex justify-between items-center">
-                        ¿Cuáles son los turnos de estudio disponibles?
-                        <i class="fa-solid fa-chevron-down text-itace-vino text-xs"></i>
-                    </summary>
-                    <p class="text-xs text-gray-600 mt-2 leading-relaxed">
-                        Contamos con Turno Matutino (7:00 AM - 1:30 PM) y Turno Vespertino (1:30 PM - 7:30 PM) según la disponibilidad de cupo por especialidad.
-                    </p>
-                </details>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6.14 CONTACTO Y UBICACIÓN -->
-    <section id="contacto" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
-                <div class="lg:col-span-5 space-y-6">
-                    <div>
-                        <span class="text-itace-vino font-semibold uppercase tracking-wider text-xs">Atención Institucional</span>
-                        <h2 class="text-3xl font-heading font-bold text-gray-900 mt-1">Contacto y Ubicación</h2>
-                        <div class="w-16 h-1 bg-itace-dorado mt-2 rounded-full"></div>
-                    </div>
-
-                    <div class="space-y-4 text-sm text-gray-600">
-                        <div class="flex items-start gap-3">
-                            <i class="fa-solid fa-location-dot text-itace-vino text-lg mt-1"></i>
-                            <div>
-                                <strong class="text-gray-900">Dirección:</strong><br>
-                                Carretera a San Fernando Km 10.5, Ejido La Escondida, C.P. 88770, Reynosa, Tamps.
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-3">
-                            <i class="fa-solid fa-phone text-itace-vino text-lg mt-1"></i>
-                            <div>
-                                <strong class="text-gray-900">Teléfono:</strong><br>
-                                (899) 926-1212
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-3">
-                            <i class="fa-solid fa-envelope text-itace-vino text-lg mt-1"></i>
-                            <div>
-                                <strong class="text-gray-900">Correo Electrónico:</strong><br>
-                                reynosa@itace.edu.mx
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-7">
-                    <form id="contact-form" class="bg-itace-grisbg p-8 rounded-2xl border border-gray-200 shadow-sm space-y-4">
-                        <h3 class="font-heading font-bold text-lg text-gray-900 mb-2">Formulario de Solicitud de Información</h3>
-                        
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-xs font-bold uppercase mb-1">Nombre Completo *</label>
-                                <input type="text" required placeholder="Ej. Juan Pérez" class="w-full px-3 py-2 rounded-lg border border-gray-300 text-sm focus:ring-2 focus:ring-itace-vino focus:outline-none">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-bold uppercase mb-1">Correo Electrónico *</label>
-                                <input type="email" required placeholder="correo@ejemplo.com" class="w-full px-3 py-2 rounded-lg border border-gray-300 text-sm focus:ring-2 focus:ring-itace-vino focus:outline-none">
-                            </div>
-                        </div>
-
-                        <div>
-                            <label class="block text-xs font-bold uppercase mb-1">Mensaje o Consulta</label>
-                            <textarea rows="3" placeholder="Escribe tus preguntas sobre carreras o proceso de ingreso..." class="w-full px-3 py-2 rounded-lg border border-gray-300 text-sm focus:ring-2 focus:ring-itace-vino focus:outline-none"></textarea>
-                        </div>
-
-                        <button type="submit" class="bg-itace-vino hover:bg-itace-vinodark text-white font-bold py-3 px-6 rounded-lg text-xs uppercase tracking-wider transition w-full">
-                            Enviar Solicitud
-                        </button>
-                        
-                        <div id="form-response" class="hidden text-center text-xs font-semibold text-emerald-700 bg-emerald-100 p-3 rounded-lg">
-                            ¡Gracias por tu mensaje! La solicitud ha sido registrada correctamente.
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6.15 CRÉDITOS Y FUENTES -->
-    <footer class="bg-itace-vinodark text-white border-t-4 border-itace-dorado mt-auto">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-xs text-gray-300">
-                <div>
-                    <h4 class="font-heading font-bold text-itace-dorado text-sm mb-3 uppercase tracking-wider">Identidad del Proyecto</h4>
-                    <p class="leading-relaxed">
-                        Proyecto: Portal Institucional ITACE Digital 4.0<br>
-                        Asignatura: Desarrollo Web<br>
-                        Institución: ITACE Plantel Reynosa<br>
-                        Fecha: Octubre 2026
-                    </p>
-                </div>
-
-                <div>
-                    <h4 class="font-heading font-bold text-itace-dorado text-sm mb-3 uppercase tracking-wider">Autores y Créditos</h4>
-                    <p class="leading-relaxed">
-                        Elaborado por estudiantes del Grupo 502 B.<br>
-                        Recursos gráficos, audios y logotipos utilizados bajo fines exclusivamente educativos y demostrativos.
-                    </p>
-                </div>
-
-                <div>
-                    <h4 class="font-heading font-bold text-itace-dorado text-sm mb-3 uppercase tracking-wider">Aviso Legal</h4>
-                    <p class="leading-relaxed text-gray-400">
-                        Este sitio web es una <strong>propuesta académica no oficial</strong> realizada con fines de evaluación educativa y no sustituye al portal oficial del Gobierno del Estado de Tamaulipas.
-                    </p>
-                </div>
-            </div>
-
-            <div class="border-t border-white/10 mt-8 pt-6 text-center text-[11px] text-gray-400">
-                © 2026 ITACE Plantel Reynosa - Proyecto Académico Digital 4.0.
-            </div>
+            <p class="pie-legal">© 2026 Proyecto académico ITACE Digital 4.0 · Grupo 502 B · Desarrollo Web. Sitio de demostración sin fines comerciales ni oficiales.</p>
         </div>
     </footer>
-
-    <!-- LÓGICA JAVASCRIPT COMPLETA E INTEGRADA -->
-    <script>
-        // Datos Estructurados del Directorio Docente (Requisito 7 - JSON/Object)
-        const docentesData = [
-            {
-                id: 1,
-                nombre: "Ing. Carlos Alberto Ramírez",
-                academia: "Tecnologías de la Información",
-                materias: "Soporte Técnico y Redes",
-                semestre: "3er y 5to Semestre",
-                perfil: "Especialista en redes Cisco y mantenimiento de cómputo."
-            },
-            {
-                id: 2,
-                nombre: "Dra. María Elena Garza",
-                academia: "Ciencias Exactas",
-                materias: "Matemáticas Aplicadas y Física",
-                semestre: "1er y 3er Semestre",
-                perfil: "Doctora en Pedagogía enfocado al razonamiento lógico."
-            },
-            {
-                id: 3,
-                nombre: "L.T. Roberto Carlos Sánchez",
-                academia: "Mantenimiento Industrial",
-                materias: "Sistemas Neumáticos e Hidráulicos",
-                semestre: "4to y 6to Semestre",
-                perfil: "Técnico especialista en automatización de líneas de producción."
-            },
-            {
-                id: 4,
-                nombre: "Lic. Ana Sofía Treviño",
-                academia: "Desarrollo Humano",
-                materias: "Ética y Valores / Metodología",
-                semestre: "1er y 2do Semestre",
-                perfil: "Licenciada en Pedagogía encargada del desarrollo cívico."
-            }
-        ];
-
-        document.addEventListener('DOMContentLoaded', () => {
-            // 1. Menú Móvil Toggle
-            const mobileBtn = document.getElementById('mobile-menu-btn');
-            const mobileMenu = document.getElementById('mobile-menu');
-            if (mobileBtn && mobileMenu) {
-                mobileBtn.addEventListener('click', () => {
-                    mobileMenu.classList.toggle('hidden');
-                });
-            }
-
-            // 2. Renderizado y Búsqueda del Directorio Docente
-            const gridDocentes = document.getElementById('docentes-grid');
-            const inputSearch = document.getElementById('docente-search');
-            const selectAcademy = document.getElementById('filter-academy');
-            const btnClear = document.getElementById('clear-search-btn');
-            const noDocentesMsg = document.getElementById('no-docentes-msg');
-
-            function renderDocentes(data) {
-                if (!gridDocentes) return;
-                gridDocentes.innerHTML = '';
-
-                if (data.length === 0) {
-                    if (noDocentesMsg) noDocentesMsg.classList.remove('hidden');
-                    return;
-                } else {
-                    if (noDocentesMsg) noDocentesMsg.classList.add('hidden');
-                }
-
-                data.forEach(doc => {
-                    const card = document.createElement('div');
-                    card.className = "institutional-card flex flex-col justify-between animate-fade-in";
-                    card.innerHTML = `
-                        <div>
-                            <div class="flex items-center space-x-3 mb-3">
-                                <div class="w-12 h-12 bg-itace-vino text-white rounded-full flex items-center justify-center font-bold text-lg border-2 border-itace-dorado">
-                                    ${doc.nombre.charAt(5)}
-                                </div>
-                                <div>
-                                    <h4 class="font-heading font-bold text-gray-900 text-sm">${doc.nombre}</h4>
-                                    <span class="text-[10px] font-semibold text-itace-vino bg-itace-vino/10 px-2 py-0.5 rounded-full">${doc.academia}</span>
-                                </div>
-                            </div>
-                            <div class="space-y-1 text-xs text-gray-600 mb-4">
-                                <p><strong class="text-gray-800">Materias:</strong> ${doc.materias}</p>
-                                <p><strong class="text-gray-800">Semestre:</strong> ${doc.semestre}</p>
-                                <p class="mt-2 text-gray-500 italic">${doc.perfil}</p>
-                            </div>
-                        </div>
-                        <span class="text-[10px] text-gray-400 border-t pt-2 uppercase tracking-wider">Personal Docente Autorizado</span>
-                    `;
-                    gridDocentes.appendChild(card);
-                });
-            }
-
-            renderDocentes(docentesData);
-
-            function filterDocentes() {
-                const query = inputSearch ? inputSearch.value.toLowerCase() : '';
-                const academy = selectAcademy ? selectAcademy.value : '';
-
-                const filtered = docentesData.filter(d => {
-                    const matchText = d.nombre.toLowerCase().includes(query) || d.materias.toLowerCase().includes(query);
-                    const matchAcademy = academy === "" || d.academia === academy;
-                    return matchText && matchAcademy;
-                });
-
-                renderDocentes(filtered);
-            }
-
-            if (inputSearch) inputSearch.addEventListener('input', filterDocentes);
-            if (selectAcademy) selectAcademy.addEventListener('change', filterDocentes);
-            if (btnClear) {
-                btnClear.addEventListener('click', () => {
-                    if (inputSearch) inputSearch.value = '';
-                    if (selectAcademy) selectAcademy.value = '';
-                    renderDocentes(docentesData);
-                });
-            }
-
-            // 3. Reproductores Independientes de Himnos
-            function setupPlayer(audioId, playBtnId, stopBtnId, progressId, timeId, durId, volId, iconPlayId) {
-                const audio = document.getElementById(audioId);
-                const playBtn = document.getElementById(playBtnId);
-                const stopBtn = document.getElementById(stopBtnId);
-                const progress = document.getElementById(progressId);
-                const timeEl = document.getElementById(timeId);
-                const durEl = document.getElementById(durId);
-                const vol = document.getElementById(volId);
-                const iconPlay = document.getElementById(iconPlayId);
-
-                if (!audio) return;
-
-                function formatTime(secs) {
-                    if (isNaN(secs)) return "0:00";
-                    const m = Math.floor(secs / 60);
-                    const s = Math.floor(secs % 60);
-                    return `${m}:${s < 10 ? '0' : ''}${s}`;
-                }
-
-                playBtn.addEventListener('click', () => {
-                    if (audio.paused) {
-                        audio.play();
-                        iconPlay.classList.remove('fa-play');
-                        iconPlay.classList.add('fa-pause');
-                    } else {
-                        audio.pause();
-                        iconPlay.classList.remove('fa-pause');
-                        iconPlay.classList.add('fa-play');
-                    }
-                });
-
-                stopBtn.addEventListener('click', () => {
-                    audio.pause();
-                    audio.currentTime = 0;
-                    iconPlay.classList.remove('fa-pause');
-                    iconPlay.classList.add('fa-play');
-                });
-
-                audio.addEventListener('timeupdate', () => {
-                    if (audio.duration) {
-                        progress.value = (audio.currentTime / audio.duration) * 100;
-                        timeEl.textContent = formatTime(audio.currentTime);
-                    }
-                });
-
-                audio.addEventListener('loadedmetadata', () => {
-                    durEl.textContent = formatTime(audio.duration);
-                });
-
-                progress.addEventListener('input', () => {
-                    audio.currentTime = (progress.value / 100) * audio.duration;
-                });
-
-                vol.addEventListener('input', () => {
-                    audio.volume = vol.value;
-                });
-            }
-
-            setupPlayer('audio-himno-itace', 'play-itace-btn', 'stop-itace-btn', 'progress-itace', 'time-itace', 'dur-itace', 'vol-itace', 'icon-itace-play');
-            setupPlayer('audio-himno-tamaulipas', 'play-tam-btn', 'stop-tam-btn', 'progress-tam', 'time-tam', 'dur-tam', 'vol-tam', 'icon-tam-play');
-
-            // 4. Filtros Galería Multimedia
-            const galleryBtns = document.querySelectorAll('#gallery-filters .tab-btn');
-            const galleryItems = document.querySelectorAll('.gallery-item');
-
-            galleryBtns.forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    galleryBtns.forEach(b => b.classList.remove('active'));
-                    e.currentTarget.classList.add('active');
-
-                    const category = e.currentTarget.getAttribute('data-cat');
-                    galleryItems.forEach(item => {
-                        if (category === 'all' || item.getAttribute('data-category') === category) {
-                            item.classList.remove('hidden');
-                        } else {
-                            item.classList.add('hidden');
-                        }
-                    });
-                });
-            });
-
-            // 5. Formulario de Contacto
-            const contactForm = document.getElementById('contact-form');
-            const formResponse = document.getElementById('form-response');
-            if (contactForm && formResponse) {
-                contactForm.addEventListener('submit', (e) => {
-                    e.preventDefault();
-                    formResponse.classList.remove('hidden');
-                    contactForm.reset();
-                });
-            }
-        });
-    </script>
+    <button type="button" id="volver-arriba" class="volver-arriba" aria-label="Volver al inicio de la página"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
 </body>
 </html>

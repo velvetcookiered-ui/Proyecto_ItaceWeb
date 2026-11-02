@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería multimedia | ITACE Reynosa - Propuesta académica</title>
+    <meta name="description" content="Galería de fotografías por categoría del ITACE Plantel Reynosa con vista ampliada.">
+    <meta name="theme-color" content="#6B1D2F">
+    <meta name="robots" content="noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+    <div class="aviso-superior">
+        <div class="contenedor">
+            <p style="margin:0"><span class="etiqueta-academica">PROPUESTA ACADÉMICA NO OFICIAL</span><span class="oculto-movil">Proyecto de Desarrollo Web · Grupo 502 B</span></p>
+            <p style="margin:0"><a href="tel:+528999240184"><i class="fa-solid fa-phone" aria-hidden="true"></i> 899 924 0184</a></p>
+        </div>
+    </div>
+
+    <header class="cabecera">
+        <div class="contenedor">
+            <a class="marca" href="../index.html" aria-label="ITACE Reynosa, ir al inicio">
+                <span class="marca-logo" aria-hidden="true">ITACE</span>
+                <span class="marca-texto"><strong>ITACE REYNOSA</strong><span>Portal digital 4.0</span></span>
+            </a>
+            <nav id="navegacion" class="navegacion" aria-label="Navegación principal">
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li><li><a href="conocenos.html">Conócenos</a></li><li><a href="oferta-educativa.html">Oferta educativa</a></li><li><a href="instalaciones.html">Instalaciones</a></li><li><a href="docentes.html">Docentes</a></li><li><a href="admisiones.html">Admisiones</a></li><li><a href="galeria.html" aria-current="page">Galería</a></li><li><a href="contacto.html">Contacto</a></li>
+                    <li class="menu-mas"><button type="button" aria-expanded="false" aria-haspopup="true">Más <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                        <ul class="submenu"><li><a href="vida-estudiantil.html">Vida estudiantil</a></li><li><a href="proyectos.html">Proyectos estudiantiles</a></li><li><a href="noticias.html">Noticias</a></li><li><a href="eventos.html">Eventos y conferencias</a></li><li><a href="identidad.html">Identidad y orgullo ITACE</a></li><li><a href="preguntas.html">Preguntas frecuentes</a></li><li><a href="creditos.html">Créditos y fuentes</a></li></ul></li>
+                </ul>
+            </nav>
+            <div class="acciones-cabecera">
+                <button type="button" id="btn-tema" class="btn-icono" aria-label="Activar modo oscuro" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 14.5A9 9 0 0 1 9.5 3a9 9 0 1 0 11.5 11.5z"/></svg></button>
+                <button type="button" id="nav-toggle" class="btn-icono nav-toggle" aria-label="Abrir menú" aria-controls="navegacion" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 5h18v2H3zM3 11h18v2H3zM3 17h18v2H3z"/></svg></button>
+            </div>
+        </div>
+    </header>
+
+    <main id="contenido">
+        <section class="hero hero-pagina" aria-labelledby="titulo-pagina">
+            <div class="contenedor anim-entrada">
+                <nav class="migas" aria-label="Ruta de navegación"><ol><li><a href="../index.html">Inicio</a></li><li aria-current="page">Galería multimedia</li></ol></nav>
+                <h1 id="titulo-pagina">Galería multimedia</h1>
+                <p class="lead">Fotografías organizadas por categoría, con vista ampliada y descripciones.</p>
+            </div>
+        </section>
+<section class="seccion seccion-blanca" aria-labelledby="galeria"><div class="contenedor"><div class="aviso" role="note"><i class="fa-solid fa-camera" aria-hidden="true"></i><p style="margin:0"><strong>Imágenes ilustrativas.</strong> Sustitúyelas por fotografías propias o autorizadas, optimizadas (formato WebP o JPG, máximo 1600 px de ancho). Si incluyes videos, usa <code>&lt;video controls preload="none"&gt;</code> con subtítulos o descripción.</p></div><div class="encabezado revelar "><span class="sobretitulo">Registro visual</span><h2>Galería multimedia</h2><p>Explora por categoría y amplía cada imagen. Usa Esc para cerrar y las flechas para navegar.</p></div><div class="filtros" role="group" aria-label="Filtrar galería por categoría" data-filtro-grupo="galeria-grid"><button type="button" class="chip" data-filtro="todos" aria-pressed="true">Todas</button><button type="button" class="chip" data-filtro="aulas" aria-pressed="false">Aulas</button><button type="button" class="chip" data-filtro="talleres" aria-pressed="false">Talleres</button><button type="button" class="chip" data-filtro="deporte" aria-pressed="false">Deporte y cívica</button><button type="button" class="chip" data-filtro="eventos" aria-pressed="false">Eventos</button><button type="button" class="chip" data-filtro="proyectos" aria-pressed="false">Proyectos</button></div><p class="solo-lectores estado-filtro" aria-live="polite"></p><div id="galeria-grid" class="galeria"><figure class="galeria-item revelar" data-cat="aulas">
+                <button type="button" class="galeria-boton" data-lightbox="../img/instalaciones/aulas.svg" data-leyenda="Aulas: Espacios de clase para la formación general y propedéutica." aria-label="Ampliar imagen: Aulas">
+                    <img src="../img/instalaciones/aulas.svg" alt="Aulas: Espacios de clase para la formación general y propedéutica. (imagen ilustrativa)" width="800" height="500" loading="lazy">
+                </button>
+                <figcaption><strong>Aulas</strong><span>Espacios de clase para la formación general y propedéutica.</span></figcaption>
+            </figure><figure class="galeria-item revelar" data-cat="talleres">
+                <button type="button" class="galeria-boton" data-lightbox="../img/instalaciones/computo.svg" data-leyenda="Taller de cómputo: Equipos para las prácticas de soporte y mantenimiento de cómputo." aria-label="Ampliar imagen: Taller de cómputo">
+                    <img src="../img/instalaciones/computo.svg" alt="Taller de cómputo: Equipos para las prácticas de soporte y mantenimiento de cómputo. (imagen ilustrativa)" width="800" height="500" loading="lazy">
+                </button>
+                <figcaption><strong>Taller de cómputo</strong><span>Equipos para las prácticas de soporte y mantenimiento de cómputo.</span></figcaption>
+            </figure><figure class="galeria-item revelar" data-cat="talleres">
+                <button type="button" class="galeria-boton" data-lightbox="../img/instalaciones/electronica.svg" data-leyenda="Taller de electrónica: Mesas de trabajo para armado y reparación de circuitos." aria-label="Ampliar imagen: Taller de electrónica">
+                    <img src="../img/instalaciones/electronica.svg" alt="Taller de electrónica: Mesas de trabajo para armado y reparación de circuitos. (imagen ilustrativa)" width="800" height="500" loading="lazy">
+                </button>
+                <figcaption><strong>Taller de electrónica</strong><span>Mesas de trabajo para armado y reparación de circuitos.</span></figcaption>
+            </figure><figure class="galeria-item revelar" data-cat="talleres">
+                <button type="button" class="galeria-boton" data-lightbox="../img/instalaciones/refrigeracion.svg" data-leyenda="Taller de refrigeración: Práctica en sistemas de refrigeración y climatización." aria-label="Ampliar imagen: Taller de refrigeración">
+                    <img src="../img/instalaciones/refrigeracion.svg" alt="Taller de refrigeración: Práctica en sistemas de refrigeración y climatización. (imagen ilustrativa)" width="800" height="500" loading="lazy">
+                </button>
+                <figcaption><strong>Taller de refrigeración</strong><span>Práctica en sistemas de refrigeración y climatización.</span></figcaption>
+            </figure><figure class="galeria-item revelar" data-cat="talleres">
+                <button type="button" class="galeria-boton" data-lightbox="../img/instalaciones/ebanisteria.svg" data-leyenda="Taller de ebanistería: Área para trabajar y dar forma a piezas de madera." aria-label="Ampliar imagen: Taller de ebanistería">
+                    <img src="../img/instalaciones/ebanisteria.svg" alt="Taller de ebanistería: Área para trabajar y dar forma a piezas de madera. (imagen ilustrativa)" width="800" height="500" loading="lazy">
+                </button>
+                <figcaption><strong>Taller de ebanistería</strong><span>Área para trabajar y dar forma a piezas de madera.</span></figcaption>
+            </figure><figure class="galeria-item revelar" data-cat="talleres">
+                <button type="button" class="galeria-boton" data-lightbox="../img/instalaciones/mantenimiento.svg" data-leyenda="Mantenimiento industrial: Práctica en maquinaria y sistemas industriales." aria-label="Ampliar imagen: Mantenimiento industrial">
+                    <img src="../img/instalaciones/mantenimiento.svg" alt="Mantenimiento industrial: Práctica en maquinaria y sistemas industriales. (imagen ilustrativa)" width="800" height="500" loading="lazy">
+                </button>
+                <figcaption><strong>Mantenimiento industrial</strong><span>Práctica en maquinaria y sistemas industriales.</span></figcaption>
+            </figure><figure class="galeria-item revelar" data-cat="deporte">
+                <button type="button" class="galeria-boton" data-lightbox="../img/instalaciones/deportes.svg" data-leyenda="Áreas deportivas: Espacios para educación física y torneos." aria-label="Ampliar imagen: Áreas deportivas">
+                    <img src="../img/instalaciones/deportes.svg" alt="Áreas deportivas: Espacios para educación física y torneos. (imagen ilustrativa)" width="800" height="500" loading="lazy">
+                </button>
+                <figcaption><strong>Áreas deportivas</strong><span>Espacios para educación física y torneos.</span></figcaption>
+            </figure><figure class="galeria-item revelar" data-cat="deporte">
+                <button type="button" class="galeria-boton" data-lightbox="../img/instalaciones/explanada.svg" data-leyenda="Explanada cívica: Lugar de ceremonias y actos de la comunidad." aria-label="Ampliar imagen: Explanada cívica">
+                    <img src="../img/instalaciones/explanada.svg" alt="Explanada cívica: Lugar de ceremonias y actos de la comunidad. (imagen ilustrativa)" width="800" height="500" loading="lazy">
+                </button>
+                <figcaption><strong>Explanada cívica</strong><span>Lugar de ceremonias y actos de la comunidad.</span></figcaption>
+            </figure><figure class="galeria-item revelar" data-cat="eventos">
+                <button type="button" class="galeria-boton" data-lightbox="../img/eventos/bienvenida.svg" data-leyenda="Jornadas de Bienvenida: Actividades de integración al inicio del ciclo." aria-label="Ampliar imagen: Jornadas de Bienvenida">
+                    <img src="../img/eventos/bienvenida.svg" alt="Jornadas de Bienvenida: Actividades de integración al inicio del ciclo. (imagen ilustrativa)" width="800" height="500" loading="lazy">
+                </button>
+                <figcaption><strong>Jornadas de Bienvenida</strong><span>Actividades de integración al inicio del ciclo.</span></figcaption>
+            </figure><figure class="galeria-item revelar" data-cat="eventos">
+                <button type="button" class="galeria-boton" data-lightbox="../img/eventos/ceremonia.svg" data-leyenda="Ceremonia cívica: Honores y actos con la comunidad escolar." aria-label="Ampliar imagen: Ceremonia cívica">
+                    <img src="../img/eventos/ceremonia.svg" alt="Ceremonia cívica: Honores y actos con la comunidad escolar. (imagen ilustrativa)" width="800" height="500" loading="lazy">
+                </button>
+                <figcaption><strong>Ceremonia cívica</strong><span>Honores y actos con la comunidad escolar.</span></figcaption>
+            </figure><figure class="galeria-item revelar" data-cat="proyectos">
+                <button type="button" class="galeria-boton" data-lightbox="../img/proyecto-1.svg" data-leyenda="Proyecto de automatización: Ejemplo de proyecto de Mantenimiento industrial." aria-label="Ampliar imagen: Proyecto de automatización">
+                    <img src="../img/proyecto-1.svg" alt="Proyecto de automatización: Ejemplo de proyecto de Mantenimiento industrial. (imagen ilustrativa)" width="800" height="500" loading="lazy">
+                </button>
+                <figcaption><strong>Proyecto de automatización</strong><span>Ejemplo de proyecto de Mantenimiento industrial.</span></figcaption>
+            </figure><figure class="galeria-item revelar" data-cat="proyectos">
+                <button type="button" class="galeria-boton" data-lightbox="../img/proyecto-2.svg" data-leyenda="Proyecto de red local: Ejemplo de proyecto de Soporte de cómputo." aria-label="Ampliar imagen: Proyecto de red local">
+                    <img src="../img/proyecto-2.svg" alt="Proyecto de red local: Ejemplo de proyecto de Soporte de cómputo. (imagen ilustrativa)" width="800" height="500" loading="lazy">
+                </button>
+                <figcaption><strong>Proyecto de red local</strong><span>Ejemplo de proyecto de Soporte de cómputo.</span></figcaption>
+            </figure></div></div></section><dialog id="lightbox" class="lightbox" aria-label="Imagen ampliada">
+        <div class="lightbox-contenido">
+            <button type="button" class="btn-icono lb-cerrar lightbox-cerrar" aria-label="Cerrar imagen ampliada"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5.7 4.3L12 10.6l6.3-6.3 1.4 1.4-6.3 6.3 6.3 6.3-1.4 1.4-6.3-6.3-6.3 6.3-1.4-1.4 6.3-6.3-6.3-6.3z"/></svg></button>
+            <img src="" alt="" width="800" height="500">
+            <p class="lightbox-leyenda" aria-live="polite"></p>
+            <div class="lightbox-controles">
+                <button type="button" class="btn-icono lb-ant" aria-label="Imagen anterior"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15.5 4.5l-7.5 7.5 7.5 7.5-1.5 1.5L5 12l9-9z"/></svg></button>
+                <button type="button" class="btn-icono lb-sig" aria-label="Imagen siguiente"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8.5 4.5l7.5 7.5-7.5 7.5 1.5 1.5 9-9-9-9z"/></svg></button>
+            </div>
+        </div>
+    </dialog>
+    </main>
+
+    <footer class="pie">
+        <div class="contenedor">
+            <div class="pie-grid">
+                <section aria-labelledby="pie-1">
+                    <h2 id="pie-1">ITACE Plantel Reynosa</h2>
+                    <p>Instituto Tamaulipeco de Capacitación para el Empleo. Bachillerato tecnológico y capacitación para el trabajo.</p>
+                    <p><strong>Propuesta académica no oficial.</strong> No sustituye al sitio institucional.</p>
+                </section>
+                <nav aria-labelledby="pie-2">
+                    <h2 id="pie-2">Navegación</h2>
+                    <ul><li><a href="../index.html">Inicio</a></li><li><a href="conocenos.html">Conócenos</a></li><li><a href="oferta-educativa.html">Oferta educativa</a></li><li><a href="instalaciones.html">Instalaciones</a></li><li><a href="docentes.html">Docentes</a></li><li><a href="admisiones.html">Admisiones</a></li></ul>
+                </nav>
+                <nav aria-labelledby="pie-3">
+                    <h2 id="pie-3">Más información</h2>
+                    <ul><li><a href="vida-estudiantil.html">Vida estudiantil</a></li><li><a href="proyectos.html">Proyectos estudiantiles</a></li><li><a href="noticias.html">Noticias</a></li><li><a href="eventos.html">Eventos y conferencias</a></li><li><a href="identidad.html">Identidad y orgullo ITACE</a></li><li><a href="preguntas.html">Preguntas frecuentes</a></li><li><a href="creditos.html">Créditos y fuentes</a></li></ul>
+                </nav>
+                <section aria-labelledby="pie-4">
+                    <h2 id="pie-4">Contacto</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Calle Octava, Prolongación Cumbres, C.P. 88745, Reynosa, Tamaulipas</li>
+                        <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+528999240184">899 924 0184</a> · <a href="tel:+528999225097">899 922 5097</a></li>
+                        <li><i class="fa-solid fa-globe" aria-hidden="true"></i> <a href="https://itace.edu.mx/" target="_blank" rel="noopener noreferrer">Sitio oficial del ITACE</a></li>
+                        <li><i class="fa-brands fa-facebook" aria-hidden="true"></i> <a href="https://www.facebook.com/itaceplantelreynosa/" target="_blank" rel="noopener noreferrer">Facebook del plantel</a></li>
+                    </ul>
+                </section>
+            </div>
+            <p class="pie-legal">© 2026 Proyecto académico ITACE Digital 4.0 · Grupo 502 B · Desarrollo Web. Sitio de demostración sin fines comerciales ni oficiales.</p>
+        </div>
+    </footer>
+    <button type="button" id="volver-arriba" class="volver-arriba" aria-label="Volver al inicio de la página"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+</body>
+</html>
