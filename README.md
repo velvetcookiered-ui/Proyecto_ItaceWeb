@@ -39,7 +39,7 @@ python -m http.server 8000
 Entra a http://localhost:8000. (El directorio docente usa `fetch`, que no funciona abriendo el archivo con doble clic.)
 
 ## Qué falta completar antes de entregar
- todo y mi penesin
+ todas las imagenes
 
 ## Fuentes de información
 Ver `paginas/creditos.html` :( .
